@@ -1,0 +1,57 @@
+﻿public class Fibonacci {
+	// recursive solution O(log(n))
+	public static int fibRecursion(int n){
+		int [][] mat={{1,1}, {1,0}};
+		int [][] ans =  fibRecursion(mat, n-1);
+		return ans[0][0];
+	}
+	public static int[][] fibRecursion(int mat[][], int n){
+		int [][] A={{1,0}, {0,1}};
+		if ( n == 0){
+			return A;
+		}
+		else if (n%2 == 0){
+			return fibRecursion(matrixSq2Multi(mat,mat),n/2);
+		}
+		else{
+			return matrixSq2Multi(mat,fibRecursion(matrixSq2Multi(mat,mat),(n - 1)/2));
+		}
+	}
+// inductive solution
+	public static int fibLoop(int n){
+		///O(log(n))
+		if (n==1 || n==2) return 1;
+		n = n-2;
+		int mat[][] = {{1,1},{1,0}};
+		int result[][] = {{1,1},{1,0}};
+		while (n != 0){
+			if ( (n % 2) != 0 ){
+				result = matrixSq2Multi(result, mat);
+			}
+			mat = matrixSq2Multi(mat, mat);
+			n = n/2;
+		} // end while
+		return result[0][0];
+	}
+	public static int[][] matrixSq2Multi(int[][] m1, int m2[][]){
+		int[][]ans = new int [2][2];
+		ans[0][0] = m1[0][0]*m2[0][0] + m1[0][1]*m2[1][0];
+		ans[0][1] = m1[0][0]*m2[0][1] + m1[0][1]*m2[1][1];
+		ans[1][0] = m1[1][0]*m2[0][0] + m1[1][1]*m2[1][0];
+		ans[1][1] = m1[1][0]*m2[0][1] + m1[1][1]*m2[1][1];
+	
+		return ans;
+	}
+	public static void main(String[] args) {
+		System.out.println("recursion");
+		for(int i=1; i<=10; i++){
+			System.out.print("F("+i+")="+fibRecursion(i)+", ");
+		}
+		System.out.println();
+		System.out.println("loop");
+		for(int i=1; i<=10; i++){
+			System.out.print("F("+i+")="+fibLoop(i)+", ");
+		}
+	}
+
+}

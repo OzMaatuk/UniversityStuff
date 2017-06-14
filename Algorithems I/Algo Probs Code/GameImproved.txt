@@ -1,0 +1,67 @@
+﻿/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Student
+ */
+public class GameImproved2 {
+
+    public static String gameWin(int arr[]) {
+        int i = 0, j = arr.length - 1;
+        int sumOdd = 0, sumEven = 0;
+        int p1 = 0, p2 = 0;
+        String ans = "";
+        for (int k = 0; k < arr.length; k++) {
+            if (k % 2 == 0) {
+                sumEven += arr[k];
+            } else {
+                sumOdd += arr[k];
+            }
+        }
+        while (sumOdd != 0 && sumEven != 0) {
+            if (sumEven >= sumOdd) {
+                sumEven -= arr[i];
+                p1 += arr[i++];
+                p2 += arr[i];
+                sumOdd -= arr[i++];
+            } else {
+                sumOdd -= arr[j];
+                p1 += arr[j--];
+                p2 += arr[j];
+                sumEven -= arr[j--];
+            }
+
+        }
+        if (p1 > p2) {
+            ans = "p1 win!";
+        } else if (p2 > p1) {
+            ans = "p2 win";
+        } else {
+            ans = "draw";
+        }
+
+        return ans + " " + (p1 - p2);
+    }
+
+    public static void main(String[] args) {
+
+    /**    int arr[] = new int[1000];
+        for (int k = 0; k < 100; k++) {
+
+                for (int i = 0; i < 1000; i++) 
+                    arr[i] = (int) (Math.random() * 101);
+                System.out.print("  " + gameWin(arr));
+                if (k!=0 && k % 10 == 0) {
+                    System.out.println();
+                }
+            
+        } **/
+        int arr[]={1,3,6,1,3,6};
+        System.out.println(gameWin(arr));
+    }
+
+}

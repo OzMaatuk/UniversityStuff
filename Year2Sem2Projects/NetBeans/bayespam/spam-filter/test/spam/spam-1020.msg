@@ -1,0 +1,36 @@
+From : 
+"Ink For Less" <mbulacu@netaccessproviders.net>
+ 
+To : 
+mbulacu@hotmail.com
+ 
+Subject : 
+Blowout Savings- save over 74% on printer ink
+ 
+Date : 
+Fri, 31 Oct 2003 17:57:01 -0400
+ 
+
+mbulacu - Friday, Oct 31, 2003
+--------------------------------------
+
+EVERYTHING AT UP TO 75% SAVINGS
+
+> High Quality Inkjets, Laser, Fax & Copier Toner
+> 90-Day Risk Free Guarantee
+> 1-year Quality Assurance Guarantee
+> No Shipping on Orders Over $39.00
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+
+Ink For Nearly Every Producer
+
+View Our Selection >> http://140.186.141.228/adv/ink/index.html
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+
+Update Your List Preferences:
+http://140.186.141.228/adv/ink/update.htm
+
+volume:18383D1E42560D06070019303A100A0025231D...
+

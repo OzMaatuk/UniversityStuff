@@ -1,0 +1,116 @@
+// double cycle linked list
+public class List {
+	Node head,tail;
+	public List(){
+		head=tail=null;
+	}
+	void add(int a){
+		Node n=new Node(a);
+		if(head==null){
+			head=n;
+			head.next=head.prev=head;
+			tail=head;
+		}
+		else{
+			n.next=head;
+			n.prev=tail;
+			tail.next=n;
+			head.prev=n;
+			tail=n;
+		}
+	}
+	public String toString(){
+		String s="";
+		Node t=head;
+		while (t.next!=head){
+			s=s+" "+t.data;
+			t=t.next;
+		}
+		return s+" "+tail.toString();	
+
+	}
+	public static void main(String[] args){
+		List list = new List();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		System.out.println(list);
+	}
+
+}
+
+
+public class Node {
+	int data;
+	Node next,prev;
+	public Node(int d){
+		data=d;
+		next=prev=null;
+	}
+	public String toString(){
+		return ""+data;
+	}
+}
+
+
+public class ParkingProblem {
+	
+	int count,len,v,x;
+	boolean flag =false;
+	
+	public ParkingProblem(List list){
+		 
+		count = len = 0;
+		v=1; x=2;
+		list.head.data=v;
+		Node temp=list.head.next;
+		while(!flag){
+			count=1;
+			while(temp.data!=v){
+				count++;	
+				temp=temp.next;
+			}
+			temp.data=x;
+			len=count;
+			while(count>0){
+				temp=temp.prev;
+				count--;
+			}
+			if (temp.data==x) flag = true;
+			else temp = temp.next;
+		}
+	}
+}
+
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class ParkingProblemTest {
+
+	int listLength =1234;
+	int randomNumber=15;
+
+	ParkingProblem pp;
+
+	@Before
+	public void setUp() throws Exception {
+
+		List ll = new List();
+		for (int i = 0; i < listLength; i++) {
+			ll.add((int) (Math.random()*randomNumber));
+		}
+
+		pp = new ParkingProblem(ll);
+
+	}
+
+	@Test
+	public void test() {
+		assertEquals(listLength, pp.len);
+		}
+
+}

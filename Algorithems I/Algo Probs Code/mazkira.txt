@@ -1,0 +1,31 @@
+﻿import java.util.Arrays;
+
+class mazkira{
+
+static void manager( int[] arr ){
+	int max = Integer.MIN_VALUE; // ׳�׳�׳•׳×׳—׳� ׳�׳�׳™׳ ׳™׳�׳�׳™
+	int min = Integer.MAX_VALUE; // ׳�׳�׳•׳×׳—׳� ׳�׳�׳§׳¡׳™׳�׳�׳™
+		for ( int i = 0 ; i < arr.length ; i++ ) { // ׳�׳¦׳™׳�׳× ׳�׳§׳¡׳™׳�׳•׳� ׳•׳�׳™׳ ׳™׳�׳•׳�
+			if( arr[i] > max ) 
+				max = arr[i]; 
+			if( arr[i] < min )
+			min = arr[i];
+		}
+	int x;
+	int[] arr_new = new int[ max - min + 1 ];
+		for ( int i = 0 ; i < arr.length ; i++ ) {
+			x = arr[i] - min; 
+			arr_new[ x ] = arr_new[ x ] + 1; 
+		}
+	int count = 0 ;
+		for ( int i = 0 ; i < arr_new.length ; i++ ) 
+			for ( int j = 0 ; j < arr_new[i] ; j++ ) 
+				arr[ count++ ] = min + i ; 
+		System.out.println(Arrays.toString(arr));
+			}
+public static void main(String[] args) {
+	int[] arr={4,5,2,8,4,10,33,4,54,6,78,9,4,0};
+	System.out.println(Arrays.toString(arr));
+	manager(arr);
+}
+}

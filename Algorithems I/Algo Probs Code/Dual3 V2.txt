@@ -1,0 +1,179 @@
+
+/**
+ * @author απιδε
+ *class shooter for the triple fight in algorithmim
+ */
+public class Shooter {
+
+	private int count=0;
+	private double chance;
+	private boolean life;
+	/**
+	 * constructor to the shooter
+	 * @param c is his chance to shoot.
+	 */
+	public Shooter(double c){
+		chance=c;
+		life=true;
+	}
+	
+	/**
+	 * @return the num of the wins.
+	 */
+	public int getWins() {
+		return count;
+	}
+	/**
+	 * when this shooter win the game
+	 */
+	public void win() {
+		count++;
+	}
+	public double getChance() {
+		return chance;
+	}
+	public void wakeUp(){
+		life=true;
+	}
+	public void kill(){
+		life=false;
+	}
+	public boolean isDeath(){
+		return !life;
+	}
+	public boolean isAlive(){
+		return life;
+	}
+	/**
+	 * this function does nothing. 
+	 */
+	public void doNothing(){
+		
+	}
+	public boolean shoot(Shooter other){      //return true if the shooter kill, false if miss.
+		double t=Math.random();
+		if (t<chance)
+		{
+			other.kill();
+			return true;
+		}
+		return false;
+	}
+
+}
+
+
+
+public class triple {
+	public final static int TIMES=1000000;
+	public static void fight(Shooter B, Shooter C, Shooter D){
+		B.wakeUp();
+		C.wakeUp();
+		D.wakeUp();
+		int first=(int)(Math.random()*3)+1;
+		switch (first) {
+		case 1:
+			B.shoot(C);
+			D.shoot(B);
+			if (B.isDeath())
+				D.win();
+			else
+			{
+				B.shoot(D);
+				B.win();
+			}
+			break;
+		case 2:
+			C.shoot(B);
+			if(B.isDeath()){
+				while (C.isAlive()&&D.isAlive()){
+					D.shoot(C);
+					if (C.isDeath())
+						D.win();
+					else
+					{
+						C.shoot(D);
+						if(D.isDeath())
+							C.win();
+					}
+				}
+			}
+			else
+			{
+				D.doNothing();
+				B.shoot(C);
+				D.shoot(B);
+				if(B.isDeath())
+					D.win();
+				else
+				{
+					B.shoot(D);
+					B.win();
+				}
+			}
+			break;
+		case 3:
+			D.doNothing();
+			int second=(int)(Math.random()*2)+1;
+			if (second==1) //B is the second
+			{
+				B.shoot(C);
+				D.shoot(B);
+				if (B.isDeath())
+					D.win();
+				else
+					B.win();
+			}
+			if (second==2) //C is the second
+			{
+				C.shoot(B);
+				if (B.isDeath())
+				{
+					while (C.isAlive()&&D.isAlive()){
+						D.shoot(C);
+						if (C.isDeath())
+							D.win();
+						else
+						{
+							C.shoot(D);
+							if(D.isDeath())
+								C.win();
+						}
+					}
+					
+				}
+				else
+				{
+					B.shoot(C);
+					D.shoot(B);
+					if(B.isDeath())
+						D.win();
+					else
+						B.win();
+				}
+			}
+			break;
+		default:
+			System.out.println("problem. you should not see this.");
+			break;
+		}
+	}
+
+public static void main(String[] args) {
+	Shooter B=new Shooter(1);
+	Shooter C=new Shooter(0.8);
+	Shooter D=new Shooter(0.5);
+	for (int i=0; i<TIMES; i++){
+		fight(B,C,D);
+	}
+System.out.println("B win "+B.getWins()+" times");
+System.out.println("C win "+C.getWins()+" times");
+System.out.println("D win "+D.getWins()+" times");
+System.out.println("generally, the chances is:");
+System.out.println("to B: "+(double)B.getWins()/TIMES);
+System.out.println("to C: "+(double)C.getWins()/TIMES);
+System.out.println("to D: "+(double)D.getWins()/TIMES);
+System.out.println("sum: "+(double)(B.getWins()+C.getWins()+D.getWins())/TIMES);
+
+}
+}

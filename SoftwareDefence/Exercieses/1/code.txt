@@ -1,0 +1,18 @@
+install.packages("RWeka")
+install.packages("xlsx")
+install.packages("caret")
+update.packages()
+library("RWeka")
+library("xlsx")
+library("caret")
+table <- read.csv(file=file.choose())
+smp_size <- floor(0.7 * nrow(table))
+train_ind <- sample(seq_len(nrow(table)), size = smp_size)
+train <- table[train_ind, ]
+test <- table[-train_ind, ]
+J48Model <- J48(Contact.lenses ~ ., data = table)
+cMatrixJ48 <- summary(J48Model)
+LRModel <- glm(Contact.lenses ~.,family=binomial(link='logit'),data=train)
+LRpredict <- predict(LRModel, type = 'response')
+cMatrixLR <- table(train$Contact.lenses, LRpredict > 0.7)
+LRaccuracy <- sum(diag(cMatrixLR))/nrow(train)*100

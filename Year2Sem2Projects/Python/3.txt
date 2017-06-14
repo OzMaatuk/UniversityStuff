@@ -1,0 +1,106 @@
+--------------------------------
+has started: 
+--------------------------------
+----------- process: ------------
+
+Name: SearchIndexer.exe, PID: 3828, Usage: 25128960
+
+Name: SearchProtocolHost.exe, PID: 2836, Usage: 10448896
+
+Name: SearchFilterHost.exe, PID: 4240, Usage: 5562368
+
+Name: POWERPNT.EXE, PID: 912, Usage: 83259392
+
+Name: sppsvc.exe, PID: 3852, Usage: 14458880
+
+Name: WINWORD.EXE, PID: 3672, Usage: 80982016
+
+---------- services: ------------
+
+Name: sppsvc, Type: Own Process, Works for: 3852
+
+--------------------------------
+has stopped: 
+--------------------------------
+----------- process: ------------
+
+Name: SearchIndexer.exe, PID: 6620, Usage: 31850496
+
+Name: SearchProtocolHost.exe, PID: 7552, Usage: 10981376
+
+Name: armsvc.exe, PID: 2556, Usage: 6008832
+
+Name: AppleMobileDeviceService.exe, PID: 7420, Usage: 12144640
+
+Name: sqlwriter.exe, PID: 7180, Usage: 7139328
+
+Name: iexplore.exe, PID: 5140, Usage: 35610624
+
+Name: iexplore.exe, PID: 7936, Usage: 35405824
+
+Name: SearchFilterHost.exe, PID: 7320, Usage: 7987200
+
+---------- services: ------------
+
+Name: AdobeARMservice, Type: Own Process, Works for: 2556
+
+Name: Apple Mobile Device Service, Type: Own Process, Works for: 7420
+
+Name: SQLWriter, Type: Own Process, Works for: 7180
+
+--------------------------------
+still running: 
+--------------------------------
+ System Idle Process with  PID: 0 is working harder
+ System with  PID: 4 is taierd
+ smss.exe with  PID: 400 is working harder
+ csrss.exe with  PID: 536 is taierd
+ wininit.exe with  PID: 628 is working harder
+ services.exe with  PID: 676 is working harder
+ lsass.exe with  PID: 684 is taierd
+ svchost.exe with  PID: 840 is working harder
+ svchost.exe with  PID: 896 is working harder
+ svchost.exe with  PID: 1008 is taierd
+ svchost.exe with  PID: 92 is taierd
+ svchost.exe with  PID: 420 is working harder
+ WUDFHost.exe with  PID: 800 is working harder
+ svchost.exe with  PID: 1148 is working harder
+ svchost.exe with  PID: 1188 is working harder
+ svchost.exe with  PID: 1196 is working harder
+ AvastSvc.exe with  PID: 1736 is working harder
+ svchost.exe with  PID: 1748 is working harder
+ spoolsv.exe with  PID: 2024 is working harder
+ svchost.exe with  PID: 2084 is working harder
+ svchost.exe with  PID: 2100 is working harder
+ svchost.exe with  PID: 2160 is working harder
+ Service_KMS.exe with  PID: 2172 is working harder
+ svchost.exe with  PID: 3264 is working harder
+ dasHost.exe with  PID: 5440 is working harder
+ csrss.exe with  PID: 7016 is working harder
+ winlogon.exe with  PID: 7708 is working harder
+ dwm.exe with  PID: 5644 is working harder
+ SynTPEnh.exe with  PID: 200 is working harder
+ RuntimeBroker.exe with  PID: 600 is working harder
+ sihost.exe with  PID: 4008 is working harder
+ taskhostw.exe with  PID: 2108 is working harder
+ explorer.exe with  PID: 2056 is taierd
+ ShellExperienceHost.exe with  PID: 3592 is working harder
+ SearchUI.exe with  PID: 4852 is working harder
+ SynTPHelper.exe with  PID: 6488 is working harder
+ igfxtray.exe with  PID: 7980 is working harder
+ hkcmd.exe with  PID: 7932 is working harder
+ igfxpers.exe with  PID: 4536 is working harder
+ AvastUI.exe with  PID: 4364 is working harder
+ fontdrvhost.exe with  PID: 5696 is working harder
+ pycharm.exe with  PID: 7632 is working harder
+ svchost.exe with  PID: 4532 is working harder
+ fsnotifier.exe with  PID: 7868 is working harder
+ conhost.exe with  PID: 4684 is working harder
+ ApplicationFrameHost.exe with  PID: 1540 is working harder
+ Microsoft.Photos.exe with  PID: 5824 is working harder
+ WmiPrvSE.exe with  PID: 7264 is working harder
+ Taskmgr.exe with  PID: 7072 is working harder
+ taskeng.exe with  PID: 608 is working harder
+ python.exe with  PID: 7100 is working harder
+ conhost.exe with  PID: 6880 is taierd
+ WmiPrvSE.exe with  PID: 2928 is working harder

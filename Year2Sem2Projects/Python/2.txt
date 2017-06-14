@@ -1,0 +1,139 @@
+--------------------------------
+time: Fri May 20 14:29:40 2016
+----------- process: ------------
+Name: System Idle Process, PID: 0, Usage: 4096
+Name: System, PID: 4, Usage: 54063104
+Name: smss.exe, PID: 400, Usage: 614400
+Name: csrss.exe, PID: 536, Usage: 1925120
+Name: wininit.exe, PID: 628, Usage: 2998272
+Name: services.exe, PID: 676, Usage: 4792320
+Name: lsass.exe, PID: 684, Usage: 12144640
+Name: svchost.exe, PID: 840, Usage: 13963264
+Name: svchost.exe, PID: 896, Usage: 8196096
+Name: svchost.exe, PID: 1008, Usage: 16269312
+Name: svchost.exe, PID: 92, Usage: 84787200
+Name: svchost.exe, PID: 420, Usage: 4456448
+Name: WUDFHost.exe, PID: 800, Usage: 1933312
+Name: svchost.exe, PID: 1148, Usage: 21540864
+Name: svchost.exe, PID: 1188, Usage: 51077120
+Name: svchost.exe, PID: 1196, Usage: 18837504
+Name: AvastSvc.exe, PID: 1736, Usage: 42471424
+Name: svchost.exe, PID: 1748, Usage: 19599360
+Name: spoolsv.exe, PID: 2024, Usage: 5238784
+Name: svchost.exe, PID: 2084, Usage: 18698240
+Name: svchost.exe, PID: 2100, Usage: 16510976
+Name: svchost.exe, PID: 2160, Usage: 4509696
+Name: Service_KMS.exe, PID: 2172, Usage: 18014208
+Name: svchost.exe, PID: 3264, Usage: 3436544
+Name: dasHost.exe, PID: 5440, Usage: 4116480
+Name: csrss.exe, PID: 7016, Usage: 6770688
+Name: winlogon.exe, PID: 7708, Usage: 7815168
+Name: dwm.exe, PID: 5644, Usage: 45654016
+Name: SynTPEnh.exe, PID: 200, Usage: 18952192
+Name: RuntimeBroker.exe, PID: 600, Usage: 51703808
+Name: sihost.exe, PID: 4008, Usage: 19271680
+Name: taskhostw.exe, PID: 2108, Usage: 39792640
+Name: explorer.exe, PID: 2056, Usage: 105615360
+Name: ShellExperienceHost.exe, PID: 3592, Usage: 59052032
+Name: SearchUI.exe, PID: 4852, Usage: 92516352
+Name: SynTPHelper.exe, PID: 6488, Usage: 3829760
+Name: igfxtray.exe, PID: 7980, Usage: 8126464
+Name: hkcmd.exe, PID: 7932, Usage: 7839744
+Name: igfxpers.exe, PID: 4536, Usage: 8888320
+Name: AvastUI.exe, PID: 4364, Usage: 22695936
+Name: fontdrvhost.exe, PID: 5696, Usage: 2826240
+Name: pycharm.exe, PID: 7632, Usage: 533540864
+Name: svchost.exe, PID: 4532, Usage: 12877824
+Name: fsnotifier.exe, PID: 7868, Usage: 2719744
+Name: conhost.exe, PID: 4684, Usage: 7942144
+Name: ApplicationFrameHost.exe, PID: 1540, Usage: 22233088
+Name: Microsoft.Photos.exe, PID: 5824, Usage: 50819072
+Name: WmiPrvSE.exe, PID: 7264, Usage: 7626752
+Name: Taskmgr.exe, PID: 7072, Usage: 32997376
+Name: taskeng.exe, PID: 608, Usage: 6103040
+Name: python.exe, PID: 7100, Usage: 19103744
+Name: conhost.exe, PID: 6880, Usage: 9101312
+Name: WmiPrvSE.exe, PID: 2928, Usage: 12660736
+Name: SearchIndexer.exe, PID: 3828, Usage: 25128960
+Name: SearchProtocolHost.exe, PID: 2836, Usage: 10448896
+Name: SearchFilterHost.exe, PID: 4240, Usage: 5562368
+Name: POWERPNT.EXE, PID: 912, Usage: 83259392
+Name: sppsvc.exe, PID: 3852, Usage: 14458880
+Name: WINWORD.EXE, PID: 3672, Usage: 80982016
+---------- services: ------------
+Name: Appinfo, Type: Share Process, Works for: 1188
+Name: AppMgmt, Type: Share Process, Works for: 1188
+Name: AudioEndpointBuilder, Type: Share Process, Works for: 92
+Name: Audiosrv, Type: Share Process, Works for: 1148
+Name: avast! Antivirus, Type: Share Process, Works for: 1736
+Name: BFE, Type: Share Process, Works for: 1748
+Name: BrokerInfrastructure, Type: Share Process, Works for: 840
+Name: CertPropSvc, Type: Share Process, Works for: 1188
+Name: CoreMessagingRegistrar, Type: Share Process, Works for: 1748
+Name: CryptSvc, Type: Share Process, Works for: 1008
+Name: DcomLaunch, Type: Share Process, Works for: 840
+Name: DeviceAssociationService, Type: Share Process, Works for: 92
+Name: Dhcp, Type: Share Process, Works for: 1148
+Name: DiagTrack, Type: Own Process, Works for: 2084
+Name: Dnscache, Type: Share Process, Works for: 1008
+Name: DoSvc, Type: Share Process, Works for: 1188
+Name: DPS, Type: Share Process, Works for: 1748
+Name: DsSvc, Type: Share Process, Works for: 92
+Name: EventLog, Type: Share Process, Works for: 1148
+Name: EventSystem, Type: Share Process, Works for: 1196
+Name: FontCache, Type: Share Process, Works for: 1196
+Name: hidserv, Type: Share Process, Works for: 92
+Name: iphlpsvc, Type: Share Process, Works for: 1188
+Name: KeyIso, Type: Share Process, Works for: 684
+Name: LanmanServer, Type: Share Process, Works for: 1188
+Name: LanmanWorkstation, Type: Share Process, Works for: 1008
+Name: lfsvc, Type: Share Process, Works for: 1188
+Name: LicenseManager, Type: Share Process, Works for: 1196
+Name: lmhosts, Type: Share Process, Works for: 1148
+Name: LSM, Type: Unknown, Works for: 840
+Name: MpsSvc, Type: Share Process, Works for: 1748
+Name: NcbService, Type: Share Process, Works for: 92
+Name: netprofm, Type: Share Process, Works for: 1196
+Name: NlaSvc, Type: Share Process, Works for: 1008
+Name: nsi, Type: Share Process, Works for: 1196
+Name: PcaSvc, Type: Share Process, Works for: 92
+Name: PlugPlay, Type: Share Process, Works for: 840
+Name: PolicyAgent, Type: Share Process, Works for: 3264
+Name: Power, Type: Share Process, Works for: 840
+Name: ProfSvc, Type: Share Process, Works for: 1188
+Name: RpcEptMapper, Type: Share Process, Works for: 896
+Name: RpcSs, Type: Share Process, Works for: 896
+Name: SamSs, Type: Share Process, Works for: 684
+Name: Schedule, Type: Share Process, Works for: 1188
+Name: seclogon, Type: Share Process, Works for: 1188
+Name: SENS, Type: Share Process, Works for: 1188
+Name: Service KMSELDI, Type: Own Process, Works for: 2172
+Name: SessionEnv, Type: Share Process, Works for: 1188
+Name: ShellHWDetection, Type: Share Process, Works for: 1188
+Name: Spooler, Type: Own Process, Works for: 2024
+Name: sppsvc, Type: Own Process, Works for: 3852
+Name: SSDPSRV, Type: Share Process, Works for: 420
+Name: StateRepository, Type: Share Process, Works for: 2100
+Name: stisvc, Type: Own Process, Works for: 2160
+Name: StorSvc, Type: Share Process, Works for: 92
+Name: SysMain, Type: Share Process, Works for: 92
+Name: SystemEventsBroker, Type: Share Process, Works for: 840
+Name: TermService, Type: Share Process, Works for: 1008
+Name: Themes, Type: Share Process, Works for: 1188
+Name: tiledatamodelsvc, Type: Share Process, Works for: 2100
+Name: TimeBroker, Type: Share Process, Works for: 420
+Name: TrkWks, Type: Share Process, Works for: 92
+Name: UmRdpService, Type: Share Process, Works for: 92
+Name: UserManager, Type: Share Process, Works for: 1188
+Name: UsoSvc, Type: Share Process, Works for: 1188
+Name: VaultSvc, Type: Share Process, Works for: 684
+Name: W32Time, Type: Share Process, Works for: 1196
+Name: Wcmsvc, Type: Share Process, Works for: 1148
+Name: WdiServiceHost, Type: Share Process, Works for: 1196
+Name: WinHttpAutoProxySvc, Type: Share Process, Works for: 1196
+Name: Winmgmt, Type: Share Process, Works for: 1188
+Name: WlanSvc, Type: Share Process, Works for: 92
+Name: wscsvc, Type: Share Process, Works for: 1148
+Name: WSearch, Type: Own Process, Works for: 3828
+Name: wuauserv, Type: Share Process, Works for: 1188
+Name: wudfsvc, Type: Share Process, Works for: 92
